@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0F1E"/>
+      <stop offset="100%" stop-color="#0D1B2E"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5CC"/>
+      <stop offset="100%" stop-color="#7C6FEA"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <!-- Border -->
+  <rect width="64" height="64" rx="14" fill="none" stroke="#00E5CC" stroke-width="2" opacity="0.4"/>
+  <!-- SA text -->
+  <text
+    x="32"
+    y="44"
+    text-anchor="middle"
+    font-family="'Inter', 'Segoe UI', Arial, sans-serif"
+    font-weight="900"
+    font-size="28"
+    fill="url(#txt)"
+    letter-spacing="-1"
+  >SA</text>
+</svg>

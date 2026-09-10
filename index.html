@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      ═══════════════════════════════════════════════════════
+       HOW TO CHANGE THE FAVICON (TAB ICON):
+       ─────────────────────────────────────────────────────
+       Option A — Use your own image (easiest):
+         1. Export a 32×32 or 64×64 PNG/SVG of your logo
+         2. Name it favicon.svg (SVG) or favicon.png (PNG)
+         3. Drop it into the /public folder
+         4. If PNG: change the line below to:
+              <link rel="icon" type="image/png" href="/favicon.png" />
+         5. Reload the browser — done.
+
+       Option B — Use a text/emoji favicon (no image needed):
+         Replace the <link rel="icon"...> line with this:
+         <link rel="icon" href="data:image/svg+xml,
+           <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+             <text y='.9em' font-size='90'>🤖</text>
+           </svg>">
+
+       Option C — Generate a proper favicon set:
+         Visit https://favicon.io → "Text" tab
+         Type "SA" (SheharYar Ali initials)
+         Pick background #00E5FF, text color #0D0E12
+         Download the zip → copy favicon.ico to /public
+         Change href below to: href="/favicon.ico"
+      ═══════════════════════════════════════════════════════
+    -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- ── SEO ──────────────────────────────────────────────── -->
+    <title>SheharYar Ali — Aspiring Web Developer</title>
+    <meta
+      name="description"
+      content="SheharYar Ali — Aspiring Web Developer and CS graduate passionate about Web Development, Data Entry, and building impactful software with React, JavaScript, and Microsoft Office."
+    />
+
+    <!-- ── Open Graph ────────────────────────────────────────── -->
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="SheharYar Ali — Aspiring Web Developer" />
+    <meta property="og:description" content="CS graduate building web applications with React, JavaScript, and modern front-end technologies." />
+    <meta property="og:image"       content="/images/og-image.png" />
+
+    <!-- ── Twitter card ──────────────────────────────────────── -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="SheharYar Ali — Aspiring Web Developer" />
+    <meta name="twitter:description" content="CS graduate building web applications with React and JavaScript." />
+    <meta name="twitter:image"       content="/images/og-image.png" />
+
+    <!-- ── Inter font ────────────────────────────────────────── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

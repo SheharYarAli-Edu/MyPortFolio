@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+/* ══════════════════════════════════════════════════════════════════
+   DESIGN TOKENS
+══════════════════════════════════════════════════════════════════ */
+@theme {
+  --color-bg:       #0A0F1E;
+  --color-bg-alt:   #0D1220;
+  --color-card:     #111827;
+  --color-accent:   #00E5CC;   /* primary  — CTAs, active states */
+  --color-purple:   #7C6FEA;   /* secondary — badges, tags */
+  --color-heading:  #FFFFFF;
+  --color-body:     #A0AEC0;
+  --color-muted:    #718096;
+  --color-border:   rgba(255,255,255,0.08);
+  --font-sans: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+/* ── Force dark background (Tailwind v4 safety net) ─────────────── */
+html, body, #root {
+  background-color: #0A0F1E !important;
+  color: #A0AEC0;
+}
+
+/* ── Reset ──────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background-color: #0A0F1E;
+  color: #A0AEC0;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+#root { min-height: 100vh; display: flex; flex-direction: column; }
+h1,h2,h3,h4,h5,h6 { color: #FFFFFF; line-height: 1.2; font-weight: 700; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+/* ── Focus ──────────────────────────────────────────────────────── */
+:focus-visible { outline: 2px solid #00E5CC; outline-offset: 3px; border-radius: 4px; }
+
+/* ── Skip nav ───────────────────────────────────────────────────── */
+.skip-nav {
+  position: absolute; top: -100%; left: 1rem; z-index: 9999;
+  padding: 0.75rem 1.5rem; background: #00E5CC; color: #0A0F1E;
+  font-weight: 700; border-radius: 0 0 6px 6px; transition: top 0.2s;
+}
+.skip-nav:focus { top: 0; }
+
+/* ── Scrollbar ──────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #0A0F1E; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #00E5CC; }
+
+/* ── Selection ──────────────────────────────────────────────────── */
+::selection { background: rgba(0,229,204,0.2); color: #fff; }
+
+/* ── Photo glow ─────────────────────────────────────────────────── */
+.photo-glow {
+  box-shadow:
+    0 0 0 3px rgba(0,229,204,0.2),
+    0 0 50px rgba(0,229,204,0.1),
+    0 24px 64px rgba(0,0,0,0.5);
+}
+
+/* ── Badge variants ─────────────────────────────────────────────── */
+.badge-cyan {
+  background: rgba(0,229,204,0.1);
+  color: #00E5CC;
+  border: 1px solid rgba(0,229,204,0.25);
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.badge-purple {
+  background: rgba(124,111,234,0.1);
+  color: #7C6FEA;
+  border: 1px solid rgba(124,111,234,0.25);
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ── Reduced motion ─────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
