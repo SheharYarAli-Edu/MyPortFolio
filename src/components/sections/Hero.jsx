@@ -23,12 +23,12 @@ try {
 
 /* ── Skill chips shown under the photo ─────────────────────────── */
 const SKILL_CHIPS = [
-  { label: "Python",       bg: "rgba(0,229,204,0.1)",   border: "rgba(0,229,204,0.25)",   color: "#00E5CC" },
-  { label: "TensorFlow",   bg: "rgba(124,111,234,0.1)", border: "rgba(124,111,234,0.25)", color: "#7C6FEA" },
-  { label: "FastAPI",      bg: "rgba(124,111,234,0.1)", border: "rgba(124,111,234,0.25)", color: "#7C6FEA" },
-  { label: "Scikit-Learn", bg: "rgba(0,229,204,0.1)",   border: "rgba(0,229,204,0.25)",   color: "#00E5CC" },
-  { label: "Keras",        bg: "rgba(124,111,234,0.1)", border: "rgba(124,111,234,0.25)", color: "#7C6FEA" },
-  { label: "Pandas",       bg: "rgba(0,229,204,0.1)",   border: "rgba(0,229,204,0.25)",   color: "#00E5CC" },
+  { label: "Python",        bg: "rgba(0,229,204,0.1)",   border: "rgba(0,229,204,0.25)",   color: "#00E5CC" },
+  { label: "HTML",          bg: "rgba(124,111,234,0.1)", border: "rgba(124,111,234,0.25)", color: "#7C6FEA" },
+  { label: "CSS",           bg: "rgba(124,111,234,0.1)", border: "rgba(124,111,234,0.25)", color: "#7C6FEA" },
+  { label: "Data Entry",    bg: "rgba(0,229,204,0.1)",   border: "rgba(0,229,204,0.25)",   color: "#00E5CC" },
+  { label: "Data Handling", bg: "rgba(124,111,234,0.1)", border: "rgba(124,111,234,0.25)", color: "#7C6FEA" },
+  { label: "JavaScript",    bg: "rgba(0,229,204,0.1)",   border: "rgba(0,229,204,0.25)",   color: "#00E5CC" },
 ]
 
 const STATS = [
